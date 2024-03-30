@@ -1,0 +1,26 @@
+// 1. to initialize the app
+npm init -y 
+
+// 2. change the scripts 
+
+// from 
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+// to 
+"scripts": {
+    "dev":"nodemon index.js",
+    "start":"node index.js"
+},
+
+// 3. install the required dependencies
+npm install express nodemon request-promise dotenv
+
+// 4. create a index.js file for our api
+configure .env environment
+
+// 5. run the app
+npm run dev
+
+// 6. using scrapeapi website for web scraping which converts html to json
